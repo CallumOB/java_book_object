@@ -10,8 +10,7 @@ public class Publication {
         this.price = price;
     }
 
-    public Publication() {
-        Scanner scanner = new Scanner(System.in);
+    public Publication(Scanner scanner) {
         boolean valid_input = false;
 
         System.out.println("Please enter the name of the publication.\t");
