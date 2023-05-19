@@ -26,6 +26,8 @@ public class Publication {
                 scanner.nextLine();
             }
         }
+
+        scanner.nextLine();
     }
 
     public String toString() {

@@ -9,6 +9,12 @@ public class Main {
         Book book1 = new Book(scanner);
         System.out.println(book1);
 
+        Book book2 = new Book(scanner);
+        System.out.println(book2);
+
+        Book book3 = book1.addBook(book2);
+        System.out.println(book3);
+
         scanner.close();
     }
 }

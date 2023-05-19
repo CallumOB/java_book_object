@@ -23,6 +23,21 @@ public class Book extends Publication {
                 scanner.nextLine();
             }
         }
+
+        scanner.nextLine();
+    }
+
+    public Book addBook(Book other) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter the title of the new book.");
+        String newTitle = scanner.nextLine();
+        float newPrice = this.getPrice() + other.getPrice();
+        int newPages = this.getPages() + other.getPages();
+
+        scanner.close();
+
+        return new Book(newTitle, newPrice, newPages);
     }
 
     public String toString(){
